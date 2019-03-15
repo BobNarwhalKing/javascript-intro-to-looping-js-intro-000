@@ -5,20 +5,23 @@ function forLoop(array) {
   }
   return array
 }
-function whileLoop (n) {
-  let countdown = n
+
+function whileLoop(n) {
   while (n > 0) {
-    console.log (--n)
+    console.log(--n)
   }
   return 'done'
 }
-var i = -1
-function incrementVariable () {
-  i = i++
-  return i
+
+var i = -1;
+
+function incrementVariable() {
+  i = i + 1;
+  return i;
 }
-function doWhileLoop (num) {
+
+function doWhileLoop(num) {
   do {
-    console.log ("I run once regardless.")
-  } while (incrementVariable () <= num)
+  console.log("I run once regardless.")
+} while (incrementVariable() < num)
 }
